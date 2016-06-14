@@ -1,0 +1,114 @@
+body {
+
+        /*margin-top:50px;*/
+        background: #333;
+       
+
+           
+}
+
+.jiemian{
+    display: block;
+    width: 1240px;
+    height: 600px;
+    border: 2px solid #333;
+    padding-top: 0px;
+    margin: 0 auto;
+    background: url(../images/05-h560-1100.png) no-repeat center; 
+  
+}
+.left{
+  display:block;
+  width: 150px;
+  height: 250px;
+  /*border: 1px solid;*/
+  margin-left: 220px;
+  margin-top:70px;
+  float: left;
+}
+.middle {
+  display:block;
+  width: 180px;
+  height: 450px;
+  /*border: 2px solid;*/
+  float:left;
+  margin-top:70px;
+  margin-left: 30px;
+  overflow: hidden;
+
+  
+}
+.middle a{
+  display: block;
+  margin-left: 130px;
+}
+.middle a:hover{
+  transform:scale(1.2);
+  -moz-transform:scale(1.2);
+  -ms-transform:scale(1.2);
+  -webkit-transform:scale(1.2);
+  -o-transform:scale(1.2);
+}
+.qipanwaikuang{
+  display:block;
+	width: 480px;
+	height: 500px;
+  /*border: 2px solid;
+ /* padding-top: 56px;
+  padding-left: 450px;*/
+	margin-top: 70px ;
+  margin-left:570px;
+  /*  background: url(../images/qipanbeijing3.png);
+   /* background: url(../images/beijing.png);*/
+
+}
+
+
+canvas{
+        display:block;
+        border: 1px solid;
+        border-radius: 6px;
+        margin:0px auto;
+        padding: 0px auto;
+       /* background:url(../images/qipanbeijing2.png) center;*/
+        background:url(../images/qipanbeijing1.png) center;
+
+        
+}
+
+ h2{
+ 	    color: #fff;
+ 
+}
+
+
+.menu{
+  display:block;
+  width: 480px;
+  height: 35px;
+  /*border: 2px solid;
+ /* vertical-align: top;
+  margin: 8px 0px;*/
+  float: left;
+}
+.menu a {
+  padding: 5px 6px;
+  margin-top: 5px;
+  margin-left:360px;
+  display: inline-block;
+  border: 1px solid #333;
+  background-color: #808A87;
+  /*cursor: pointer;*/
+  color: white;
+  font-size: 14px;
+  box-shadow: 1px 1px 5px 0 #000;
+  text-decoration: none;
+  padding-right: 6px;
+}
+
+
+
+/*button{
+  margin-left:120px; 
+}
+*/

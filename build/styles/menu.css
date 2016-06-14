@@ -1,0 +1,279 @@
+
+body{
+	background:#333;
+	/*background: url(..//images/body.gif); */
+}
+
+
+.box0{
+	
+	/*background:#ffffff;*/
+	width:800px;
+	height: 480px;
+	/*border: 1px solid #fff;*/
+	margin: 50px auto;
+	position:relative; 
+	background: url(..//images/3.gif) no-repeat center;
+
+
+
+}
+
+.box1{
+	/*background: #ff00ff;*/
+	width: 600px;
+	height: 120px;
+	margin-top:30px;
+	margin-left: 100px;
+	position: absolute;
+	background: url(..//images/logo1.png) no-repeat center;
+   /* transition-delay: 20s;
+    -moz-transition-delay: 20s;
+    -webkit-transition-delay: 20s;
+    -o-transition-delay: 20s;*/
+
+}
+
+.box2{
+	/*background: #ff0000;*/
+	width:600px;
+	height: 210px;
+	margin: 180px 100px;
+
+	position: absolute;
+	/*transition-delay: 20s;
+    -moz-transition-delay: 20s;
+    -webkit-transition-delay: 20s;
+    -o-transition-delay: 20s;  */
+}
+
+.box2 .link{
+	display:block; 
+	width:50%;
+	height: 65px;
+	margin:0px auto;
+	padding:0px auto;
+    
+}
+
+.link .icon{
+	display: inline-block;   /*将盒子转换成块状*/
+	width:60px;
+	height: 60px;
+	transition: 0.2s ease-out;  /*过渡时间0.2s，ease-out表示由快到慢*/
+    -moz-transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;   /*transition有浏览器兼容的问题*/
+
+
+}
+
+.link-individual .icon{background:  url(..//images/computer40.png) no-repeat center center;}
+.link-double .icon{background:  url(..//images/youxiji.png) no-repeat center center;}
+.link-introduction .icon{background: url(..//images/wenhao40.png) no-repeat center center;}
+
+/*鼠标滑过icon图标时的变化用hover*/
+.link .icon:hover{transform: rotate(360deg) scale(1.2); /*鼠标滑过放大1.2倍，换成其他倍数不成功*/
+                  -ms-transform: rotate(360deg) scale(1.2);   /*浏览器兼容*/
+                  -moz-transform: rotate(360deg) scale(1.2);
+                  -webkit-transform: rotate(360deg) scale(1.2);
+                  -o-transform: rotate(360deg) scale(1.2);
+    
+
+                  }
+/*设置按钮*/
+.button{
+	display: inline-block ;    /*直接用block默认有换行符，用inline-block为行内块元素*/
+	vertical-align: 50%;
+	width:180px;
+	height: 40px;
+	line-height: 40px;
+	text-decoration: none;     /*去除链接的下划线*/
+	color:#2DCB70;
+	font-family: Arial;
+	font-weight: bolder;
+	border: 2px solid rgba(192,192,192,0.7); /*border为边框 0.8为透明度   rgba(255,255,255,0.7)*/
+	padding-left: 20px;    /*距离左边50像素的填充 */
+	margin:20px auto;
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background:url(../images/allow.png) no-repeat 130px center;
+	transition: 0.4s ease;  /*过渡时间0.2s，easet表示由慢到快到慢*/
+    -moz-transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;   /*transition有浏览器兼容的问题*/
+
+}
+
+/*设置四边的线*/
+.button:hover{
+	border:2px solid rgba(128,138,135,0.7);
+	background-position: 140px center;
+
+}
+
+.button .line{
+	display: block;
+	position: absolute;
+	background: none;
+	transition: 0.4s ease;  /*过渡时间0.2s，easet表示由慢到快到慢*/
+    -moz-transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;   /*transition有浏览器兼容的问题*/
+
+}
+
+.button:hover .line{
+	background: rgba(128,138,135,0.5);
+}
+
+.button .line-top1{
+	height: 2px;
+	width:0px;
+	left:-100px;
+	top:20px;
+}
+
+.button:hover .line-top1{
+	width:50px;
+	left:220px;
+}
+
+.button .line-right1{
+	width:2px;
+    height:40px;	
+	left:396px;
+	top:-30px;
+}
+
+.button:hover .line-right1{
+	height:0px;
+	top:40px;
+}
+
+.button .line-bottom1{
+	width:2px;
+    height:40px;	
+	left:220px;
+	top:80px;
+}
+
+.button:hover .line-bottom1{
+	height:0px;
+	top:40px;
+}
+
+.button .line-left1{
+	height: 2px;
+	width:40px;
+	left:500px;
+	top:58px;
+}
+
+
+.button:hover .line-left1{
+	width:40px;
+	left:250px;
+}
+/*双人模式*/
+.button .line-top2{
+	height: 2px;
+	width:0px;
+	left:-100px;
+	top:85px;
+}
+
+.button:hover .line-top2{
+	width:50px;
+	left:220px;
+}
+
+.button .line-right2{
+	width:2px;
+    height:40px;	
+	left:396px;
+	top:30px;
+}
+
+.button:hover .line-right2{
+	height:20px;
+	top:90px;
+}
+
+.button .line-bottom2{
+	width:2px;
+    height:40px;	
+	left:218px;
+	top:120px;
+}
+
+.button:hover .line-bottom2{
+	height:20px;
+	top:100px;
+}
+
+.button .line-left2{
+	height: 2px;
+	width:40px;
+	left:500px;
+	top:123px;
+}
+
+
+.button:hover .line-left2{
+	width:40px;
+	left:250px;
+}
+
+/*说明*/
+.button .line-top3{
+	height: 2px;
+	width:0px;
+	left:-100px;
+	top:150px;
+}
+
+.button:hover .line-top3{
+	width:50px;
+	left:220px;
+}
+
+.button .line-right3{
+	width:2px;
+    height:40px;	
+	left:396px;
+	top:100px;
+}
+
+.button:hover .line-right3{
+	height:20px;
+	top:160px;
+}
+
+.button .line-bottom3{
+	width:2px;
+    height:40px;	
+	left:218px;
+	top:200px;
+}
+
+.button:hover .line-bottom3{
+	height:20px;
+	top:160px;
+}
+
+.button .line-left3{
+	height: 2px;
+	width:40px;
+	left:500px;
+	top:188px;
+}
+
+
+.button:hover .line-left3{
+	width:40px;
+	left:250px;
+}

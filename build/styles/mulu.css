@@ -1,0 +1,310 @@
+body{
+	background:#333;
+	/*background: url(..//images/body.gif); */
+}
+
+
+.box0{
+	
+	/*background:#ffffff;*/
+	width:800px;
+	height: 480px;
+    border: 1px solid #333;
+	margin: 50px auto;
+	background: url(..//images/bg04.png) no-repeat center;
+
+}
+h2{
+	margin-top:58px; 
+}
+.box01{
+	width: 540px;
+	height: 300px;
+	border: 1px solid #000;
+	margin-top:20px;
+	margin-left:135px;  
+	/*margin: 10px 135px;*/
+
+}
+figure,h3,p,img{
+	margin: 0px;
+	padding: 0px;
+}
+figure{	
+    position: relative;
+    width: 33.33%;
+    height: 50%;
+    overflow: hidden;
+    float: left;
+}
+figure img{
+	opacity: 0.8;
+	transition: all 0.35s;
+}
+figure figcaption p,h3,span,div{
+	transition: all 0.35s;
+}
+figcaption{
+	position: absolute;
+    top: 0px;
+	left: 0px;
+	color: #fff;
+}
+
+/*平移动画*/
+.text1{
+	background: #D2691E;
+
+}
+.text1 figcaption p{
+	/*background: #fff;*/
+	color: #fff;
+	margin: 3px;
+	text-align: center;
+	transform: translate(-160px,0px);
+	font-size: 11px;
+	text-indent: 2em;
+}
+.text1 figcaption p:nth-of-type(1){
+	transition-delay: 0.05s
+}
+.text1 figcaption p:nth-of-type(2){
+	transition-delay: 0.1s
+}
+.text1 figcaption p:nth-of-type(3){
+	transition-delay: 0.15s
+}
+.text1 figcaption{
+	padding:20px;
+}
+.text1:hover figcaption p{
+	transform: translate(0px,0px);
+}
+.text1:hover img{
+	transform: translate(-50px,0px);
+	opacity: 0.5;
+}
+
+/*旋转动画*/
+.text2{
+	background: #C76114;
+}
+.text2 figcaption{
+	width:100%;
+	height: 100%;
+    
+}
+.text2 figcaption h3{
+	margin-top:11%;
+	margin-left: 15%;
+}
+.text2 figcaption p{
+	margin-left: 15%;
+	transform: translate(0px,50px);
+	opacity: 0;
+
+}
+.text2 figcaption div{
+	border: 2px solid #fff;
+    width:85%;
+    height: 85%;
+    position: absolute;
+    top: 8%;
+    left: 9%;
+    transform: translate(0px,-200px) rotate(0deg);
+    -ms-transform: translate(0px,-200px) rotate(0deg);
+    -o-transform: translate(0px,-200px) rotate(0deg);
+    -webkit-transform: translate(0px,-200px) rotate(0deg);
+    -moz-transform: translate(0px,-200px) rotate(0deg);
+
+
+}
+.text2:hover figcaption div{
+	transform: translate(0px,0px) rotate(360deg);
+	-ms-transform: translate(0px,0px) rotate(360deg);
+	-o-transform: translate(0px,0px) rotate(360deg);
+	-webkit-transform: translate(0px,0px) rotate(360deg);
+	-moz-transform: translate(0px,0px) rotate(360deg);
+}
+
+.text2:hover img{
+	opacity: 0.5;
+}
+.text2:hover figcaption p{
+	transform: translate(0px,0px);
+	opacity: 1;
+	font-size: 11px;
+	text-indent: 2em;
+	
+}
+
+
+/*扭曲动画*/
+.text3{
+	background: #C76114;  /*最好和图片颜色接近，使图片颜色加深*/
+}
+.text3 figcaption{
+	top:30%;    /*给文字一个坐标定位*/
+	left: 15%;
+
+}
+.text3 figcaption h3{
+	transform: skew(90deg);  /*斜切*/
+}
+.text3 figcaption p{
+	transform: skew(90deg);
+	transition-delay: 0.1s;  /*延时出现*/
+    font-size: 11px;
+	text-indent: 2em;
+}
+.text3:hover img{
+	opacity: 0.5;  /*透明度*/
+}
+.text3:hover figcaption h3{
+	transform: skew(0deg);  /*斜切*/
+}
+.text3:hover figcaption p{
+	transform: skew(0deg);
+}
+
+/*缩放*/
+.text4{
+	background: #C76114;
+}
+.text4 figcaption{
+	width:100%;
+	height: 100%;
+	font-size: 11px;
+	text-indent: 2em;
+}
+.text4 figcaption h3{
+	margin-top:11%;
+	margin-left: 15%;
+	transform: scale(1.2,1.2);
+	opacity: 0
+}
+.text4 figcaption p{
+	margin-left: 15%;
+	transform: scale(1.2,1.2);
+	opacity: 0
+}
+
+.text4 figcaption div{
+	border: 2px solid #fff;
+    width:80%;
+    height: 80%;
+    position: absolute;
+    top: 8%;
+    left: 9%;
+    transform: scale(1.2,1.2);
+    opacity: 0;
+}
+.text4:hover figcaption div{
+	transform: scale(1,1);
+	opacity: 1;
+
+}
+.text4:hover img{
+	opacity: 0.5;
+	transform: scale(1.2,1.2); /*图片变大*/
+}
+.text4:hover figcaption h3{
+	transform: scale(1,1);
+	opacity: 1;
+}
+.text4:hover figcaption p{
+	transform: scale(1,1);
+	opacity: 1;
+}
+
+
+.text5{
+	background: #C76114;  /*最好和图片颜色接近，使图片颜色加深*/
+}
+.text5 figcaption{
+	top:30%;    /*给文字一个坐标定位*/
+	left: 15%;
+
+}
+.text5 figcaption h3{
+	transform: skew(90deg);  /*斜切*/
+}
+.text5 figcaption p{
+	transform: skew(90deg);
+	transition-delay: 0.1s;  /*延时出现*/
+    font-size: 11px;
+	text-indent: 2em;
+}
+.text5:hover img{
+	opacity: 0.5;  /*透明度*/
+}
+.text5:hover figcaption h3{
+	transform: skew(0deg);  /*斜切*/
+}
+.text5:hover figcaption p{
+	transform: skew(0deg);
+}
+
+
+
+/*缩放*/
+.text6{
+	background: #C76114;
+}
+.text6 figcaption h3{
+	margin-top:11%;
+	margin-left: 15%;
+	transform: scale(1.2,1.2);
+	opacity: 0
+}
+.text6 figcaption p{
+	margin-left: 15%;
+	transform: scale(1.2,1.2);
+	opacity: 0
+
+}
+.text6 figcaption{
+	width:100%;
+	height: 100%;
+	font-size: 11px;
+	text-indent: 2em;
+}
+.text6 figcaption div{
+	border: 2px solid #fff;
+    width:80%;
+    height: 80%;
+    position: absolute;
+    top: 8%;
+    left: 9%;
+    transform: scale(1.2,1.2);
+    opacity: 0;
+}
+.text6:hover figcaption div{
+	transform: scale(1,1);
+	opacity: 1;
+
+}
+.text6:hover img{
+	opacity: 0.5;
+	transform: scale(1.2,1.2); /*图片变大*/
+}
+.text6:hover figcaption h3{
+	transform: scale(1,1);
+	opacity: 1;
+}
+.text6:hover figcaption p{
+	transform: scale(1,1);
+	opacity: 1;
+}
+
+
+a{
+	display: inline-block;
+	float: right;
+	margin-top:0px; 
+    margin-right:130px; 
+	padding-top: 1px;
+	padding-left: 0px;
+
+
+}
