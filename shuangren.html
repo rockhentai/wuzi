@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>五子棋</title>
+
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    
+    <link  href="styles/shuangren.css" type="text/css" rel="stylesheet" >
+ 
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="shuangren.js">
+    </script>
+    
+
+
+</head>
+
+<body onload="drawRect()">
+   <!-- <h2 align="center">五子棋对战</h2>-->
+    <div class="jiemian">
+        <div class="left">
+        <img src="images/logo3.png" width="110" height="240">
+        </div>
+        <div class="middle">
+            <img src="images/wanjiatupian2.png " width="180px" height="120px "><br><br>
+
+            <!--<button onclick="pifu()"><img src="images/pifu4035.png"></button><br><br>-->
+            
+
+            <div class="dropdown">
+               
+              &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                  棋盘背景
+                  <span class="caret"></span>
+              </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/pifu4035.png">
+              <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
+                <li role="presentation"><a role="menuitem" tabindex="-1" onclick="yuanshiqipan()">原始棋盘</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" onclick="mosha()">磨砂黑</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" onclick="gaoguizi()">高贵紫</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" onclick="huolifen()">活力粉</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" onclick="dianyahei()">典雅黑</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" onclick="tiankonglan()">天空蓝</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" onclick="qingxinlv()">清新绿</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" onclick="tuhaojin()">土豪金</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" onclick="danyazong()">淡雅棕</a></li>
+              </ul>
+            </div>
+
+            <!--<a onclick="pifu()"><img src="images/pifu4035.png"></a><br>-->
+            <br>
+            <audio src="music/beijingmusic.mp3" type="audio/mp3" autoplay="autoplay">
+               <img src="images/play.png"></audio><br>
+
+            <a href="ai.html" target="_self" onclick="goai"><img src="images/40403.png"></a><br>
+            
+            <a href="mulu.html" target="_self" onclick="gomenu"><img src="images/gohome2.png"></a>
+        </div>
+        <div class="qipanwaikuang" >
+
+             <canvas width="450" id="canvas" onmousedown="play(event)" height="450" >你的浏览器不支持HTML5 canvas  ，请使用 google chrome 浏览器 打开.
+
+            </canvas>
+            <div class="menu">  <!--重新开始按钮的设置-->
+                 <a href="shuangren.html" target="_self" onclick="restartgui()">重新开始</a>
+                <!--  <a href="javascript:;" onclick="goback()" >&nbsp;悔&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;棋&nbsp;</a> -->
+            </div>        
+
+         </div>
+    </div>  
+<!--
+<div class="alert alert-warning" role="alert" id="myAlert">
+    <h4>谨防被骗</h4>
+    <p>请确认您转账的信息是你的亲朋好友，不要轻意相信不认识的人...</p>
+    <button type="button"  class="btn btn-danger" id="close">关闭</button>
+</div>
+-->
+
+<script>
+  //window.onload = function() {
+    //var canvas = document.getElementById('canvas');
+     //  canvas.onclick = function pifu() {
+     //  document.getElementById()
+      function yuanshiqipan(){
+        document.getElementById('canvas').style.background='url(images/qipanbeijing1.png)';
+      }
+
+      function mosha(){
+        document.getElementById('canvas').style.background='url(images/4504502.png)';
+      }
+
+      function gaoguizi(){
+        document.getElementById('canvas').style.background='url(images/45045019.png)';
+      }
+
+      function huolifen(){
+        document.getElementById('canvas').style.background='url(images/45045012.png)';
+      }
+
+      function dianyahei(){
+        document.getElementById('canvas').style.background='url(images/4504501.png)';
+      }
+
+      function tiankonglan(){
+        document.getElementById('canvas').style.background='url(images/45045023.png)';
+      }
+
+      function qingxinlv(){
+        document.getElementById('canvas').style.background='url(images/45045020.png)';
+      }
+
+      function tuhaojin(){
+        document.getElementById('canvas').style.background='url(images/4504503.png)';
+      }
+      function danyazong(){
+        document.getElementById('canvas').style.background='url(images/4504508.png)';
+      }
+
+      function music(){
+
+      }
+
+
+  </script>
+
+
+<!--<script src="jquery-1.11.2.min.js"></script>
+<script src="bootstrap.min.js"></script>-->
+
+</body>
+
+</html>
